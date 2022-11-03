@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reto Final CRUD</title>
+
+    <!-- FUENTES -->
+    <link
+            rel="stylesheet"
+            href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+    />
+</head>
+<!-- PERSONALIZACION DEL NVBAR -->
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark "style="background-color:#FF8DBC ;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Universidad de la Vida</a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-link" href="index.html">Estudiantes Y Cursos</a>
+            <a class="nav-link" href="matricula.html">Matricular</a>
+        </ul>
+    </div>
+</nav>
+<!-- AÑADIR ESTUDIANTE -->
+<div class="container pt-4 pl-2 pr-2">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body"style="background-color:#FF8DBC ;">
+                    <h1 class="h4">Añadir Estudiante</h1>
+
+                    <form id="estudiantes-form">
+                        <label for="student-name">Nombre:</label>
+                        <input
+                                type="text"
+                                id="student-name"
+                                class="form-control mb-3"
+                                placeholder="Pepito"
+                                autofocus
+                        />
+
+                        <label for="student-last-name">Apellido:</label>
+                        <input
+                                type="text"
+                                id="student-last-name"
+                                class="form-control mb-3"
+                                placeholder="Sanchez"
+                                autofocus
+                        />
+
+                        <button class="btn btn-dark" id="btn-students-form">Guardar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="students-container"></div>
+        </div>
+<!-- AÑADIR CLASE -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body"style="background-color:#FF8DBC ;">
+                    <h1 class="h4">Añadir Clase</h1>
+
+                    <form id="clases-form">
+                        <label for="clases-title">Título:</label>
+                        <input
+                                type="text"
+                                id="clases-title"
+                                class="form-control mb-3"
+                                class="My First Title"
+                                placeholder="Título de la clase"
+                                autofocus
+                        />
+
+                        <label for="clases-description">Descripción:</label>
+                        <textarea
+                                id="clases-description"
+                                rows="3"
+                                class="form-control mb-3"
+                                placeholder="Descripción de la clase"
+                        ></textarea>
+
+
+                        <button class="btn btn-dark" id="btn-clases-form">Guardar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="classes-container"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="./index.js" type="module"></script>
+</body>
+</html>
