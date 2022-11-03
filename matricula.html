@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Firebase CRUD</title>
+
+    <!-- BOOTSWATCH -->
+    <link
+            rel="stylesheet"
+            href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+    />
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark "style="background-color: #ec53af;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Universidad de la Vida</a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-link" href="index.html">Estudiantes Y Cursos</a>
+            <a class="nav-link" href="matricula.html">Matricular</a>
+        </ul>
+    </div>
+</nav>
+<!-- ADD TASK -->
+<div class="container pt-4 pl-2 pr-2">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body" style="background-color: #ec53af;">
+                    <h1 class="h4">Matricular</h1>
+
+                    <form id="matricula-form">
+                        <label for="students-dropdown">Estudiante:</label>
+                        <select name="student-id" id="students-dropdown" class="form-select mb-3">
+                        </select>
+
+                        <label for="classes-dropdown">Clase:</label>
+                        <select name="class-id" id="classes-dropdown" class="form-select mb-3">
+                        </select>
+
+                        <button class="btn btn-dark" id="btn-matricula-form">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div id="enrollment-container"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="./matricula.js" type="module"></script>
+</body>
+</html>
